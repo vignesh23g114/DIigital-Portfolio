@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIGNESHWAR.S - Web Designer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ddd;
+            margin: 0 15px;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #61dafb;
+        }
+
+        section {
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        #certificates ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #certificates ul li {
+            margin-bottom: 10px;
+        }
+
+        a.download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #1a1a1a;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a.download-btn:hover {
+            background-color: #333;
+        }
+
+        #contact form input,
+        #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contact form button {
+            padding: 10px 15px;
+            background-color: #1a1a1a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contact form button:hover {
+            background-color: #333;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VIGNESHWAR.S- Web Designer</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm <strong>VIGNESHWAR.S </strong>, a dedicated and creative web designer with a passion for building beautiful, user-friendly, and responsive websites. I thrive in transforming ideas into engaging digital experiences.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>IInd Year BSC - Computer Science With AI at Agurchand Manmull Jain College, Meenambakkam (Batch: 2023 – 2026)</p>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <ul>
+            <li>Web Design Essentials - Coursera</li>
+            <li>Responsive Web Design - freeCodeCamp</li>
+            <li>JavaScript Mastery - Udemy</li>
+        </ul>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Click the button below to view my resume:</p>
+        <a href="RESUME.pdf " class="download-btn">View Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 vigneshwar. All Rights Reserved.
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for reaching out! I will get back to you soon.');
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+</body>
+</html>
